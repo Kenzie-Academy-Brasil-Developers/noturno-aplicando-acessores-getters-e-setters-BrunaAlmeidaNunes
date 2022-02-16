@@ -130,9 +130,9 @@ class Pessoa {
 
 	get estuda() {
 		if (this._estuda === true){
-			return 'Estudante'
+			return 'Sim'
 		} else{
-			return 'Não estudante'
+			return 'Não'
 		}
 	}
 
@@ -152,7 +152,7 @@ function card(usuario){
 	createParagraph(div, `Telefone: ${telefone}`);
 	createParagraph(div, `Celular: ${celular}`);
 	createParagraph(div, `PIS: ${pis}`);
-	createParagraph(div, estuda);
+	createParagraph(div, ` Estudante? ${estuda}`);
 	container.appendChild(div);
 }
 
